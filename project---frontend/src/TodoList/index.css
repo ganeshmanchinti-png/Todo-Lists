@@ -1,0 +1,148 @@
+
+.container {
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1px 0 20px;
+    box-sizing: border-box;
+}
+
+/* Heading */
+.heading {
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Input and Add button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    box-sizing: content-box;
+    outline: none;
+}
+
+.add-button {
+    width: 80px;
+    height: 45px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Todo list */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+/* Each Todo item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 72px;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #ffffff, #f1f7ff);
+  border-left: 1px solid #2563eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+   
+  box-shadow: 0 0 12px 0;
+}
+
+/* Todo name */
+.todo-name {
+    flex: 1;
+    min-width: 0;
+     
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+
+/* Done / Pending container */
+.todo-status-container {
+    width: 120px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Status labels */
+.todo-completed,
+.todo-pending {
+    width: 80px;
+    padding: 6px 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-completed {
+    background-color: green;
+    color: white;
+}
+
+.todo-pending {
+    background-color: red;
+    color: white;
+}
+
+/* Updated time */
+.updatetime {
+    color: #4CAF50;
+    font-size: 10px;
+    margin: 5px 0 0;
+}
+
+/* Check and Delete buttons container */
+.todo-actions {
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Check and Delete buttons */
+.delete-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 3px;
+}
+
+ 
