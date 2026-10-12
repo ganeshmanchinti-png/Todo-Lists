@@ -1,0 +1,19 @@
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "title":"Learn HTTP requests"
+}
+
+
+###
+GET http://localhost:3000/todos/
+
+###
+PUT http://localhost:3000/todos/7/
+Content-Type: application/json 
+
+{
+    "is_done":0
+}
